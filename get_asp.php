@@ -13,7 +13,4 @@ $json = file_get_contents($url, false, stream_context_create($options));
 $json = mb_convert_encoding($json, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
 $arr = json_decode($json,true);
 
-//echo $arr->res->blogData->id;
-//echo $arr['res']['blogData']['id'];
-
 var_dump($arr);
